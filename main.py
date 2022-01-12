@@ -56,7 +56,7 @@ if __name__ == '__main__':
                 if name not in attendance1:
                     print_noshow(name, day, '上午签退')
                     print_noshow(name, day, '下午签到')
-                if name not in attendance:  # 有一次打卡的记为缺下午签到
+                elif name not in attendance:  # 有一次打卡的记为缺下午签到
                     print_noshow(name, day, '下午签到')
 
                 # 下班
